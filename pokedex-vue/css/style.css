@@ -1,0 +1,60 @@
+#app{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titolo{
+    text-align: center;
+}
+
+.container-img {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.pokeImg{
+    /* border: 1px solid green; */
+    width: 240px;
+    height: 117px;  
+    position: absolute;
+    left: 177px;
+    top: 32%;
+    /* background-color: white; */
+    border-radius: 10px;
+}
+
+.nome{
+    width: 270px;
+    position: absolute;
+    right: 355px;
+    top: 195px;
+    /* background-color: #72ec44; */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.numero{
+    width: 75px;
+    position: absolute;
+    bottom: 127px;
+    left: 243px;
+    text-align: center;
+}
+
+
+.btn{  
+    position: relative;
+    left: 591px;
+    bottom: 125px;
+    border: 1px solid red;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}

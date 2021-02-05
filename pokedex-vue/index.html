@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div  id="app">
+        <h1 class="titolo">
+            Clicca per scoprire nuovi pokemon
+        </h1>
+        <!-- container img -->
+        <div class="container-img">
+
+            <img src="pokedex.png" alt="">
+            
+            <img v-if="pokemon.length != 0 " class="pokeImg" :src="pokemon.img" alt="">
+            <h3 class="nome">
+                {{pokemon.name}}
+            </h3>
+            <h3 class="numero">
+               n°{{numero}}
+            </h3>
+            <h3 class="clicca">
+                <!-- clicca -->
+            </h3>
+            <div class="btn" @click="gerRandomNumber(1, 300)">
+                clicca qui 
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
